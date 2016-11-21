@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# This pack is valid for apps with a cpanfile in the root
-if [ -f $1/cpanfile ]; then
-  echo "Perl/cpan"
-  exit 0
-else
-  exit 1
-fi
+echo "$1"
+exit 0
+
